@@ -27,3 +27,4 @@ def checklongestpalindrome(arr):
 arr=["moses","madam","noon","racecar","python"]
 
 print("The longest palindrome is:",checklongestpalindrome(arr))
+
