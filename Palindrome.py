@@ -24,7 +24,17 @@ def checklongestpalindrome(arr):
                 res=i
     return res
 
-arr=["moses","madam","noon","racecar","python"]
+arr=["moses","PRADEEP","PINTOO","racecar","python"]
 
 print("The longest palindrome is:",checklongestpalindrome(arr))
 
+def totalpalindrome(arr):
+    count=0
+    for i in arr:
+        if checkpalindrome(i):
+            count+=1
+    s=checkpalindrome(arr)
+    print(s)
+    return count
+arr=["mom","dad","sister","brother","civic"]
+print("The total number of palindromes in the list is:",totalpalindrome(arr))
