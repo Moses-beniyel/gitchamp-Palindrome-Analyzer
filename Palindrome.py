@@ -1,3 +1,4 @@
+import math
 def checkpalindrome(s):
    
     l=0
@@ -13,3 +14,16 @@ if checkpalindrome(s):
     print("The given string is palindrome")
 else:
     print("it is not a palindome")
+
+def longestPalindrome(arr):
+    maxi=-1
+    res=""
+    for i in range(len(arr)):
+        if(checkpalindrome(arr[i])):
+            maxi=math.max(len(arr[i]),maxi)
+            res=arr[i]
+
+arr=["madam","moses","malayalam"]
+longestPalindrome(arr)
+    
+    
